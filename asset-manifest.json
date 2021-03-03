@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Thomas-Ln/landing-page/static/css/main.263434a3.chunk.css",
+    "main.js": "/Thomas-Ln/landing-page/static/js/main.40eeef35.chunk.js",
+    "main.js.map": "/Thomas-Ln/landing-page/static/js/main.40eeef35.chunk.js.map",
+    "runtime-main.js": "/Thomas-Ln/landing-page/static/js/runtime-main.537e06b3.js",
+    "runtime-main.js.map": "/Thomas-Ln/landing-page/static/js/runtime-main.537e06b3.js.map",
+    "static/css/2.8bae3570.chunk.css": "/Thomas-Ln/landing-page/static/css/2.8bae3570.chunk.css",
+    "static/js/2.a2d75942.chunk.js": "/Thomas-Ln/landing-page/static/js/2.a2d75942.chunk.js",
+    "static/js/2.a2d75942.chunk.js.map": "/Thomas-Ln/landing-page/static/js/2.a2d75942.chunk.js.map",
+    "static/js/3.26d96db4.chunk.js": "/Thomas-Ln/landing-page/static/js/3.26d96db4.chunk.js",
+    "static/js/3.26d96db4.chunk.js.map": "/Thomas-Ln/landing-page/static/js/3.26d96db4.chunk.js.map",
+    "index.html": "/Thomas-Ln/landing-page/index.html",
+    "static/css/2.8bae3570.chunk.css.map": "/Thomas-Ln/landing-page/static/css/2.8bae3570.chunk.css.map",
+    "static/css/main.263434a3.chunk.css.map": "/Thomas-Ln/landing-page/static/css/main.263434a3.chunk.css.map",
+    "static/js/2.a2d75942.chunk.js.LICENSE.txt": "/Thomas-Ln/landing-page/static/js/2.a2d75942.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.537e06b3.js",
+    "static/css/2.8bae3570.chunk.css",
+    "static/js/2.a2d75942.chunk.js",
+    "static/css/main.263434a3.chunk.css",
+    "static/js/main.40eeef35.chunk.js"
+  ]
+}
