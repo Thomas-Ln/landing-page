@@ -1,0 +1,21 @@
+@import 'colors';
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0.5rem;
+  filter: drop-shadow(2px 4px 6px black);
+
+  .header__title {
+    margin: 0.6rem 0.5rem;
+    color: $white;
+    user-select: none;
+    font-family: 'Julius Sans One', sans-serif;
+  }
+
+  .landing-logo {
+    width: 50px;
+    filter: invert(1);
+  }
+}
+

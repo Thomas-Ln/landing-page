@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  background: linear-gradient(#0768a7, #054874, #043f65);
+}
+
+/*# sourceMappingURL=app.css.map */

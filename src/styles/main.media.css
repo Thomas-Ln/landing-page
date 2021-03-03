@@ -1,0 +1,60 @@
+@media (min-width: 320px) {
+  .main__presentation {
+    grid-area: p;
+  }
+
+  .main__gallery {
+    grid-area: g;
+  }
+
+  .main__features {
+    grid-area: f;
+  }
+
+  .main__testimonials {
+    grid-area: t;
+  }
+
+  .main__presentation .presentation__video {
+    height: 12rem;
+  }
+}
+@media (min-width: 768px), (min-width: 320px) {
+  .main {
+    grid-template-areas: ". p p p p p p ." "g g g g g g g g" ". f f f f f f ." "t t t t t t t t";
+  }
+}
+@media (min-width: 768px) {
+  .main__presentation .presentation__video {
+    height: 24rem;
+  }
+
+  .main__title {
+    letter-spacing: 0.6px;
+  }
+
+  .main__testimonials .testimonials__element {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    grid-template-areas: ". . p p p p . ." "g g g g g g g g" ". . f f f f . ." "t t t t t t t t";
+  }
+
+  .main__presentation {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main__features {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .main__testimonials {
+    display: flex;
+    padding: 1rem 10rem;
+  }
+}
+
+/*# sourceMappingURL=main.media.css.map */

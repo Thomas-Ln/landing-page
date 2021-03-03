@@ -1,0 +1,179 @@
+@media (min-width: 320px) {
+  .main__presentation {
+    grid-area: p;
+  }
+
+  .main__gallery {
+    grid-area: g;
+  }
+
+  .main__features {
+    grid-area: f;
+  }
+
+  .main__testimonials {
+    grid-area: t;
+  }
+
+  .main__presentation .presentation__video {
+    height: 12rem;
+  }
+}
+@media (min-width: 768px), (min-width: 320px) {
+  .main {
+    grid-template-areas: ". p p p p p p ." "g g g g g g g g" ". f f f f f f ." "t t t t t t t t";
+  }
+}
+@media (min-width: 768px) {
+  .main__presentation .presentation__video {
+    height: 24rem;
+  }
+
+  .main__title {
+    letter-spacing: 0.6px;
+  }
+
+  .main__testimonials .testimonials__element {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    grid-template-areas: ". . p p p p . ." "g g g g g g g g" ". . f f f f . ." "t t t t t t t t";
+  }
+
+  .main__presentation {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main__features {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .main__testimonials {
+    display: flex;
+    padding: 1rem 10rem;
+  }
+}
+.main {
+  display: grid;
+  grid-auto-columns: 1fr;
+  overflow-x: hidden;
+}
+.main .main__title {
+  font-family: "Signika", sans-serif;
+  color: #f8f1f1;
+}
+.main section {
+  margin: 2rem 0;
+}
+.main .main__presentation,
+.main .main__features {
+  margin-top: 0;
+}
+.main .main__presentation article,
+.main .main__features article {
+  filter: drop-shadow(2px 4px 6px #111);
+}
+.main .main__presentation p,
+.main .main__features p {
+  font-size: 0.9rem;
+  font-family: "Staatliches";
+  color: #f8f1f1;
+}
+.main .main__presentation {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 3rem;
+  line-height: 1.4;
+}
+.main .main__presentation .presentation__video {
+  padding-top: 1.5rem;
+  width: 100%;
+}
+.main .main__presentation .presentation__call-to-action {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  padding: 0.8rem 2rem;
+  overflow: hidden;
+  border: none;
+  background-color: #16c79a;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  color: #f8f1f1;
+  font-family: "Signika";
+  font-weight: bold;
+  transition: color 0.4s ease-in-out;
+}
+.main .main__presentation .presentation__call-to-action:hover {
+  cursor: pointer;
+  color: #16c79a;
+}
+.main .main__presentation .presentation__call-to-action::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #f8f1f1;
+  transform-origin: center;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+.main .main__presentation .presentation__call-to-action:hover::before {
+  transform: translate3d(-50%, -50%, 0) scale3d(50, 50, 50);
+}
+.main .main__gallery {
+  padding-top: 2.2rem;
+  background-color: #f8f1f1;
+}
+.main .main__gallery .swiper-container {
+  width: 80%;
+  min-height: 16rem;
+}
+.main .main__gallery .swiper-slide {
+  filter: drop-shadow(1px 1px 5px darkgrey);
+}
+.main .main__gallery .swiper-pagination-bullets {
+  bottom: 18px !important;
+}
+.main .main__gallery .swiper-pagination-bullet-active {
+  background: #16c79a !important;
+}
+.main .main__features {
+  display: grid;
+  grid-gap: 1rem;
+}
+.main .main__testimonials {
+  background-color: #f8f1f1;
+}
+.main .main__testimonials .testimonials__element {
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+.main .main__testimonials .testimonials__element img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 8px;
+}
+.main .main__testimonials .testimonials__quote {
+  margin: 0;
+}
+.main .main__testimonials .testimonials__quote p:nth-child(1) {
+  font-family: "Signika";
+  color: grey;
+}
+.main .main__testimonials .testimonials__quote .quote__author {
+  font-style: italic;
+  color: #0768a7;
+}
+
+/*# sourceMappingURL=main.css.map */

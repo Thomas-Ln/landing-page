@@ -1,0 +1,132 @@
+@import 'colors';
+@import 'main.media';
+
+.main {
+  display: grid;
+  grid-auto-columns: 1fr;
+  overflow-x: hidden;
+
+  .main__title {
+    font-family: 'Signika', sans-serif;
+    color: $white;
+  }
+
+  section {
+    margin: 2rem 0;
+  }
+
+  // SHARED
+  .main__presentation,
+  .main__features {
+    margin-top: 0;
+    article {
+      filter: drop-shadow(2px 4px 6px #111);
+    }
+    p {
+      font-size: 0.9rem;
+      font-family: 'Staatliches';
+      color: $white;
+    }
+  }
+
+  // PRESENTATION
+  .main__presentation {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 3rem;
+    line-height: 1.4;
+    .presentation__video {
+      padding-top: 1.5rem;
+      width: 100%;
+    }
+    .presentation__call-to-action {
+      z-index: 1;
+      position: relative;
+      width: 100%;
+      padding: 0.8rem 2rem;
+      overflow: hidden;
+      border: none;
+      background-color: $mint;
+      outline: none;
+      border-radius: 8px;
+      border: none;
+      color: $white;
+      font-family: "Signika";
+      font-weight: bold;
+      transition: color 0.4s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        color: $mint;
+      }
+      &::before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background-color: $white;
+        transform-origin: center;
+        transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+        transition: transform 0.45s ease-in-out;
+      }
+      &:hover::before {
+        transform: translate3d(-50%, -50%, 0) scale3d(50, 50, 50);
+      }
+    }
+  }
+
+  // GALLERY
+  .main__gallery {
+    padding-top: 2.2rem;
+    background-color: $white;
+    .swiper-container {
+      width: 80%;
+      min-height: 16rem;
+    }
+    .swiper-slide {
+      filter: drop-shadow(1px 1px 5px darkgrey);
+    }
+    .swiper-pagination-bullets {
+      bottom: 18px !important;
+    }
+    .swiper-pagination-bullet-active {
+      background: $mint !important;
+    }
+  }
+
+  // FEATURES
+  .main__features {
+    display: grid;
+    grid-gap: 1rem;
+  }
+
+  // TESTIMONIALS
+  .main__testimonials {
+    background-color: $white;
+    .testimonials__element {
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+      img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 8px;
+      }
+    }
+    .testimonials__quote {
+      margin: 0;
+      p:nth-child(1) {
+        font-family: 'Signika';
+        color: grey;
+      }
+      .quote__author {
+        font-style: italic;
+        color: $light-blue;
+      }
+    }
+  }
+}
